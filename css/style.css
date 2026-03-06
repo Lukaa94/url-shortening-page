@@ -72,6 +72,7 @@ nav .nav-right .sign-up a {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 2rem;
 }
 .article-flex .article-text {
   flex: 1;
@@ -99,4 +100,44 @@ nav .nav-right .sign-up a {
 }
 .article-flex .article-logo img {
   width: 100%;
+}
+
+.input-img {
+  background-image: url(/images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(257, 27%, 26%);
+  height: 150px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.input-img .input {
+  flex: 1;
+}
+.input-img .input input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.input-img .input-btn button {
+  background-image: linear-gradient(to right, hsl(180, 66%, 49%), hsl(257, 27%, 26%));
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.input-img .input-btn button:hover {
+  opacity: 0.7;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 3rem;
 }/*# sourceMappingURL=style.css.map */

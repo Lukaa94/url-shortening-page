@@ -88,6 +88,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 50px;
+    margin-bottom: 2rem;
 
     .article-text{
         flex: 1;
@@ -122,5 +123,45 @@ nav {
     }
 }
 
+//fix backround with background-position: center
+.input-img{
+  background-image: url(/images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $Purple-950;
+  height: 150px;
+  gap: 20px;
+  border-radius: 10px;
+ 
+.input{
+  flex: 1;
+}
+ .input input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: $base-font-size;
+  }
 
+  .input-btn button{
+    background-image: linear-gradient(to right,$blue-400,$Purple-950);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: $base-font-size;
+    cursor: pointer;
+  }
+  .input-btn button:hover{
+      opacity: 0.7;
+  }
 
+}
+.input-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 3rem;
+  }
