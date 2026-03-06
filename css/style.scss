@@ -1,4 +1,4 @@
-
+@use "sass:math";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500;700&display=swap');
 
 $blue-400: hsl(180, 66%, 49%);
@@ -10,6 +10,8 @@ $Gray-500: hsl(257, 7%, 63%);
 $Gray-900: hsl(255, 11%, 22%);
 $Gray-950: hsl(260, 8%, 14%);
 
+$base-font-size: 18px;
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ $Gray-950: hsl(260, 8%, 14%);
 }
 
 body{
-    font-size: 18px;
+    font-size: $base-font-size;
     font-family: "Poppins",sans-serif;
 }
 
@@ -28,4 +30,97 @@ h1,h2,h3{
 p{
     font-weight:500;
 }
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+ 
+  .nav-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+   .nav-left p{
+    color: $Gray-500;
+    cursor: pointer;
+  }
+    .nav-left p:hover{
+        color: $Gray-950;
+ }
+  .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-right a{
+    text-decoration: none;
+  }
+  .nav-right .login a{
+    color: $Gray-500;
+  }
+  .nav-right .login a:hover{
+    color: $Gray-950;
+  }
+
+  .nav-right .sign-up{
+    background-image: linear-gradient(to right, $blue-400, $Purple-950);
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+  .nav-right .sign-up:hover{
+    opacity: 0.7;
+  }
+  .nav-right .sign-up a{
+    color: white;
+  }
+}
+
+.article-flex{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .article-text{
+        flex: 1;
+    }
+
+    .article-text h1{
+        font-size: $base-font-size * 3;
+    }
+
+    .article-text p{
+        color: $Gray-400;
+        padding-bottom: 2rem;
+    }
+
+    .article-text button{
+        background-image: linear-gradient(to right, $blue-400, $Purple-950);
+        padding: 12px 40px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-size: $base-font-size;
+    }
+    .article-text button:hover{
+        opacity: 0.7;
+    }
+
+    .article-logo{
+        flex: 1.2;
+    }
+    .article-logo img{
+        width: 100%;
+    }
+}
+
+
 

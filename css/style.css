@@ -16,4 +16,87 @@ h1, h2, h3 {
 
 p {
   font-weight: 500;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav-left p {
+  color: hsl(257, 7%, 63%);
+  cursor: pointer;
+}
+nav .nav-left p:hover {
+  color: hsl(260, 8%, 14%);
+}
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav-right a {
+  text-decoration: none;
+}
+nav .nav-right .login a {
+  color: hsl(257, 7%, 63%);
+}
+nav .nav-right .login a:hover {
+  color: hsl(260, 8%, 14%);
+}
+nav .nav-right .sign-up {
+  background-image: linear-gradient(to right, hsl(180, 66%, 49%), hsl(257, 27%, 26%));
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+nav .nav-right .sign-up:hover {
+  opacity: 0.7;
+}
+nav .nav-right .sign-up a {
+  color: white;
+}
+
+.article-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.article-flex .article-text {
+  flex: 1;
+}
+.article-flex .article-text h1 {
+  font-size: 54px;
+}
+.article-flex .article-text p {
+  color: hsl(0, 0%, 75%);
+  padding-bottom: 2rem;
+}
+.article-flex .article-text button {
+  background-image: linear-gradient(to right, hsl(180, 66%, 49%), hsl(257, 27%, 26%));
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.article-flex .article-text button:hover {
+  opacity: 0.7;
+}
+.article-flex .article-logo {
+  flex: 1.2;
+}
+.article-flex .article-logo img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
