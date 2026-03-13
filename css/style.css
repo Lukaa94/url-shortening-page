@@ -144,5 +144,40 @@ nav .nav-right .sign-up a {
 
 .advanced-text {
   text-align: center;
-  margin: 50px 0px;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 4rem 4rem;
+}
+.advanced-text h2 {
+  font-size: 36px;
+  padding-bottom: 1rem;
+}
+.advanced-text p {
+  color: hsl(257, 7%, 63%);
+}
+
+.bcg-color {
+  background-color: hsl(0, 0%, 75%);
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 4rem;
+}
+.cards .card-box {
+  background-color: white;
+  padding: 0px 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+.cards .card-images {
+  transform: translateY(-50%);
+  background-color: hsl(257, 27%, 26%);
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
