@@ -102,6 +102,10 @@ nav .nav-right .sign-up a {
   width: 100%;
 }
 
+.input-pos {
+  transform: translateY(50%);
+}
+
 .input-img {
   background-image: url(/images/bg-shorten-desktop.svg);
   background-size: cover;
@@ -146,7 +150,7 @@ nav .nav-right .sign-up a {
   text-align: center;
   margin: 0 auto;
   max-width: 720px;
-  padding: 4rem 4rem;
+  padding: 10rem 4rem 8rem 4rem;
 }
 .advanced-text h2 {
   font-size: 36px;

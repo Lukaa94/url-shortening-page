@@ -123,6 +123,10 @@ nav {
     }
 }
 
+.input-pos{
+  transform: translateY(50%);
+}
+
 //fix backround with background-position: center
 .input-img{
   background-image: url(/images/bg-shorten-desktop.svg);
@@ -170,7 +174,8 @@ nav {
   text-align: center;
   margin: 0 auto;
   max-width: 720px;
-  padding: 4rem 4rem;
+  padding: 10rem 4rem 8rem 4rem;
+  
 
   h2{
     font-size: $base-font-size * 2;
