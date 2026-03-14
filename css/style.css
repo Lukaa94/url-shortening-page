@@ -233,4 +233,57 @@ nav .nav-right .sign-up a {
   background-repeat: no-repeat;
   height: 200px;
   background-color: hsl(257, 27%, 26%);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .hide {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .article-flex {
+    flex-direction: column-reverse;
+  }
+  .btn-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  .input-flex {
+    flex-direction: column;
+    height: 40vh;
+  }
+  .input-flex .input {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .input-flex .input-btn {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .input-flex button {
+    width: 100%;
+    box-shadow: 1px 1px 2px 2px hsl(257, 7%, 63%);
+  }
+  .advanced-text {
+    margin-bottom: 6rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card-1, .cards .card-2, .cards .card-3 {
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

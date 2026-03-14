@@ -1,146 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-</head>
-<body>
-
-  <!--Navbar-->
-  <nav class="container">
-    <div class="nav-left">
-      <img src="/images/logo.svg" alt="">
-      <p>Features</p>
-      <p>Pricing</p>
-      <p>Resources</p>
-    </div>
-    <div class="nav-right">
-      <div class="login">
-        <a href="">Login</a>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b6430e4595.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="container">
+      <div class="nav-left">
+        <img src="/images/logo.svg" alt="" />
+        <p class="hide">Features</p>
+        <p class="hide">Pricing</p>
+        <p class="hide">Resources</p>
       </div>
-      <div class="sign-up">
-        <a href="">Sign Up</a>
-      </div>
-    </div>
-  </nav>
-  
-  
-  <main>
-    <!--Text left and Img right-->
-    <article class="container article-flex">
-      <section class="article-text">
-        <h1>More than just shorter links</h1>
-        <p>Build your brand’s recognition and get detailed insights 
-        on how your links are performing.</p>
-        <button class="btn">Get Started</button>
-      </section>
-      <section class="article-logo">
-        <img src="/images/illustration-working.svg" alt="">
-      </section>
-    </article>
-
-  <!--Input-->
-    <div class="container input-pos">
-      <section class=" input-img input-flex">
-        <div class="input">
-          <input type="text" placeholder="Shorten a link here...">
+      <div class="nav-right">
+        <div class="login hide">
+          <a href="">Login</a>
         </div>
-        <div class="input-btn">
+        <div class="sign-up hide">
+          <a href="">Sign Up</a>
+        </div>
+        <section class="hamburger">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </section>
+      </div>
+    </nav>
+
+    <main>
+      <!--Text left and Img right-->
+      <article class="container article-flex">
+        <section class="article-text">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <div class="btn-mobile">
+            <button class="btn">Get Started</button>
+          </div>
+        </section>
+        <section class="article-logo">
+          <img src="/images/illustration-working.svg" alt="" />
+        </section>
+      </article>
+
+      <!--Input-->
+      <div class="container input-pos">
+        <section class="input-img input-flex">
+          <div class="input">
+            <input type="text" placeholder="Shorten a link here..." />
+          </div>
+          <div class="input-btn">
             <button>Shorten it!</button>
+          </div>
+        </section>
+      </div>
+
+      <!--Backround color-->
+      <section class="bcg-color">
+        <!--Text center-->
+        <div class="advanced-text">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+
+        <!--Cards-->
+        <div class="container cards pos-relative">
+          <section class="card-1 card-box">
+            <div class="card-images">
+              <img src="images/icon-brand-recognition.svg" alt="brand" />
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </section>
+
+          <section class="card-2 card-box">
+            <div class="card-images">
+              <img src="images/icon-detailed-records.svg" alt="records" />
+            </div>
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </section>
+
+          <section class="card-3 card-box">
+            <div class="card-images">
+              <img src="images/icon-fully-customizable.svg" alt="" />
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </section>
+          <!--Line behind cards-->
+          <section class="card-line"></section>
         </div>
       </section>
-    </div>
-  
-  <!--Backround color-->
-  <section class="bcg-color">
-  <!--Text center-->
-    <div class="advanced-text">
-      <h2>Advanced Statistics</h2>
-      <p>Track how your links are performing across the web with our 
-        advanced statistics dashboard.</p>
-    </div>
+    </main>
 
-    <!--Cards-->
-    <div class="container cards pos-relative">
-      <section class="card-1 card-box">
-        <div class="card-images">
-          <img src="images/icon-brand-recognition.svg" alt="brand">
-        </div>
-        <h3>Brand Recognition</h3>
-        <p>Boost your brand recognition with each click. Generic links don’t 
-          mean a thing. Branded links help instil confidence in your content.</p>
-      </section>
-
-      <section class="card-2 card-box">
-        <div class="card-images">
-          <img src="images/icon-detailed-records.svg" alt="records">
-        </div>
-        <h3>Detailed Records</h3>
-        <p>Gain insights into who is clicking your links. Knowing when and where 
-          people engage with your content helps inform better decisions.</p>
-      </section>
-
-      <section class="card-3 card-box">
-        <div class="card-images">
-          <img src="images/icon-fully-customizable.svg" alt="">
-        </div>
-        <h3>Fully Customizable</h3>
-        <p>Improve brand awareness and content discoverability through customizable 
-          links, supercharging audience engagement.</p>
-      </section>
-      <section class="card-line"></section>
-    </div>
-  </section>
-  </main>
-
-  <!--Footer-->
+    <!--Footer-->
     <footer>
       <section class="foo-desktop foo-img">
         <h2>Boost your links today</h2>
         <button class="btn">Get Started</button>
       </section>
-      
     </footer>
 
-  
-
-  
-
-  
-
-  
-
-  
-
- 
-
-  
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-
-</body>
+    Features Link Shortening Branded Links Analytics Resources Blog Developers
+    Support Company About Our Team Careers Contact
+  </body>
 </html>
