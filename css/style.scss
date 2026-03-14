@@ -222,6 +222,19 @@ nav {
   }
 }
 
+.pos-relative{
+  position:relative;
+  z-index: 2;
+  .card-line{
+    width: 600px;
+    z-index: -1;
+    height: 10px;
+    background-color: $blue-400;
+    position: absolute;
+    transform: translateY(300%);
+  }
+}
+
 .foo-desktop{
   text-align: center;
   display: flex;

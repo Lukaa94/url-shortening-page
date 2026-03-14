@@ -195,6 +195,19 @@ nav .nav-right .sign-up a {
   margin-top: 200px;
 }
 
+.pos-relative {
+  position: relative;
+  z-index: 2;
+}
+.pos-relative .card-line {
+  width: 600px;
+  z-index: -1;
+  height: 10px;
+  background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  transform: translateY(300%);
+}
+
 .foo-desktop {
   text-align: center;
   display: flex;
