@@ -37,6 +37,15 @@ p{
   padding: 0 4rem;
 }
 
+.btn{
+  background-image: linear-gradient(to right, $blue-400, $Purple-950);
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: $base-font-size;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -103,14 +112,6 @@ nav {
         padding-bottom: 2rem;
     }
 
-    .article-text button{
-        background-image: linear-gradient(to right, $blue-400, $Purple-950);
-        padding: 12px 40px;
-        border-radius: 30px;
-        border: none;
-        color: white;
-        font-size: $base-font-size;
-    }
     .article-text button:hover{
         opacity: 0.7;
     }
@@ -174,7 +175,7 @@ nav {
   text-align: center;
   margin: 0 auto;
   max-width: 720px;
-  padding: 10rem 4rem 8rem 4rem;
+  padding: 12rem 4rem 0rem 4rem;
   
 
   h2{
@@ -220,3 +221,36 @@ nav {
     margin-top: 200px;
   }
 }
+
+.foo-desktop{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  h2{
+    color: white;
+  }
+
+  button{
+    box-shadow: 1px 1px 2px 2px $Gray-500;
+  }
+  
+  button:hover{
+    opacity: 0.7;
+  }
+  
+}
+
+//check to put backround  positioning in 1 line
+//background: url(/images/bg-boost-desktop.svg) no-repeat center center/ cover;
+.foo-img{
+  background: url(/images/bg-boost-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  background-color: $Purple-950;
+} 

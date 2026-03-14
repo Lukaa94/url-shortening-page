@@ -24,6 +24,15 @@ p {
   padding: 0 4rem;
 }
 
+.btn {
+  background-image: linear-gradient(to right, hsl(180, 66%, 49%), hsl(257, 27%, 26%));
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -84,14 +93,6 @@ nav .nav-right .sign-up a {
   color: hsl(0, 0%, 75%);
   padding-bottom: 2rem;
 }
-.article-flex .article-text button {
-  background-image: linear-gradient(to right, hsl(180, 66%, 49%), hsl(257, 27%, 26%));
-  padding: 12px 40px;
-  border-radius: 30px;
-  border: none;
-  color: white;
-  font-size: 18px;
-}
 .article-flex .article-text button:hover {
   opacity: 0.7;
 }
@@ -150,7 +151,7 @@ nav .nav-right .sign-up a {
   text-align: center;
   margin: 0 auto;
   max-width: 720px;
-  padding: 10rem 4rem 8rem 4rem;
+  padding: 12rem 4rem 0rem 4rem;
 }
 .advanced-text h2 {
   font-size: 36px;
@@ -192,4 +193,31 @@ nav .nav-right .sign-up a {
 }
 .cards .card-3 {
   margin-top: 200px;
+}
+
+.foo-desktop {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.foo-desktop h2 {
+  color: white;
+}
+.foo-desktop button {
+  box-shadow: 1px 1px 2px 2px hsl(257, 7%, 63%);
+}
+.foo-desktop button:hover {
+  opacity: 0.7;
+}
+
+.foo-img {
+  background: url(/images/bg-boost-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  background-color: hsl(257, 27%, 26%);
 }/*# sourceMappingURL=style.css.map */
