@@ -44,6 +44,7 @@ p{
   border: none;
   color: white;
   font-size: $base-font-size;
+  cursor: pointer;
 }
 
 nav {
@@ -254,7 +255,6 @@ nav {
   button:hover{
     opacity: 0.7;
   }
-  
 }
 
 //check to put backround  positioning in 1 line
@@ -266,6 +266,39 @@ nav {
   background-repeat: no-repeat;
   height: 200px;
   background-color: $Purple-950;
+}
+
+.about-bcg{
+  background-color: $Gray-950;
+  
+  .about-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   align-content: center;
+   height: 40vh;
+  }
+  .grid-pos-right{
+    justify-self: flex-end;
+  }
+  //cant change normaly color of image
+  .about-logo{
+    filter: brightness(0) invert(1);
+  }
+  h3{
+    color: white;
+  }
+  p{
+    color: $Gray-500;
+  }
+  p:hover{
+    color: $blue-400;
+  }
+  .icons{
+    color: white;
+    i:hover{
+      color: $blue-400;
+    }
+  }
 }
 
 //for mobile
@@ -329,9 +362,18 @@ nav {
       margin-top: 0px;
     }
   }
+  //About
+  .about-bcg .about-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200vh;
+  } 
+  .txt h3{
+    padding: 40px 0px;
+  }
   
-
-
 }
 
 

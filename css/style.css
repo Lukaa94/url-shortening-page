@@ -31,6 +31,7 @@ p {
   border: none;
   color: white;
   font-size: 18px;
+  cursor: pointer;
 }
 
 nav {
@@ -235,6 +236,37 @@ nav .nav-right .sign-up a {
   background-color: hsl(257, 27%, 26%);
 }
 
+.about-bcg {
+  background-color: hsl(260, 8%, 14%);
+}
+.about-bcg .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  height: 40vh;
+}
+.about-bcg .grid-pos-right {
+  justify-self: flex-end;
+}
+.about-bcg .about-logo {
+  filter: brightness(0) invert(1);
+}
+.about-bcg h3 {
+  color: white;
+}
+.about-bcg p {
+  color: hsl(257, 7%, 63%);
+}
+.about-bcg p:hover {
+  color: hsl(180, 66%, 49%);
+}
+.about-bcg .icons {
+  color: white;
+}
+.about-bcg .icons i:hover {
+  color: hsl(180, 66%, 49%);
+}
+
 .hamburger {
   display: none;
 }
@@ -285,5 +317,15 @@ nav .nav-right .sign-up a {
   .cards .card-1, .cards .card-2, .cards .card-3 {
     margin-bottom: 50px;
     margin-top: 0px;
+  }
+  .about-bcg .about-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200vh;
+  }
+  .txt h3 {
+    padding: 40px 0px;
   }
 }/*# sourceMappingURL=style.css.map */
