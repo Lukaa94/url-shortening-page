@@ -168,6 +168,8 @@ nav .nav-right .sign-up a {
   display: flex;
   gap: 40px;
   padding-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 .cards .card-box {
   background-color: white;
@@ -184,4 +186,10 @@ nav .nav-right .sign-up a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.cards .card-2 {
+  margin-top: 100px;
+}
+.cards .card-3 {
+  margin-top: 200px;
 }/*# sourceMappingURL=style.css.map */
