@@ -318,6 +318,10 @@ nav .nav-right .sign-up a {
     margin-bottom: 50px;
     margin-top: 0px;
   }
+  .cards .card-line {
+    rotate: 90deg;
+    transform: translateY(0%);
+  }
   .about-bcg .about-grid {
     display: flex;
     flex-direction: column;
